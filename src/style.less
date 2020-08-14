@@ -2,9 +2,15 @@
     margin: 0; padding: 0;
 }
 #wrapper{
+    user-select: none;
     height: 100vh;
     width: 100vw;
     position: relative;
+    #delete_btn{
+        position: absolute;
+        right: 10px;
+        top: 5px;
+    }
     #item{
         position: absolute;
         left: 0;
@@ -21,12 +27,21 @@
         top: 5%;
         right: 5%;
         bottom: 5%;
-        display: flex;
-        flex-direction: row;
-        align-items: stretch;
         border: 1px solid #ccc;
-        .hightlight{
-            border: 1px solid greenyellow;
+        #view_wrapper{
+            height: 100%;
+            width: 100%;
+            position: relative;
+            .hightlight{
+                position: absolute;
+                box-sizing: border-box;
+                border: 1px solid greenyellow;
+                display: flex;
+                align-items: center;
+                justify-content:  center;
+                line-height: 100%;
+                font-size: 30px;
+            }
         }
     }
 }
