@@ -1,0 +1,16 @@
+{
+  "name": "drag",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "parcel src/index.html"
+  },
+  "dependencies": {
+    "parcel-bundler": "^1.12.4"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.11.1",
+    "less": "^3.12.2"
+  }
+}
